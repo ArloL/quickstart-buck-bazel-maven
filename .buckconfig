@@ -1,0 +1,6 @@
+[download]
+    maven_repo = http://www.google.de/
+[java]
+    src_roots = /src/main/java/
+    source_level = 8
+    target_level = 8
