@@ -1,4 +1,4 @@
 java_library(
-  name = 'app',
-  srcs = glob(['src/main/java/**/*.java']),
+    name = "app",
+    srcs = glob(["src/main/java/**/*.java"]),
 )

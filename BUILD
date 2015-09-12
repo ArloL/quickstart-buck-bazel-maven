@@ -1,5 +1,5 @@
 java_binary(
     name = "app",
-    srcs = glob(["**/*.java"]),
+    srcs = glob(["src/main/java/**/*.java"]),
     main_class = "com.example.App",
 )
