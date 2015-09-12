@@ -18,7 +18,7 @@ java_test(
     source_under_test = [":main"],
     deps = [
         ":main",
-        "//dep::junit",
+        "//dep:junit",
         "//dep:hamcrest-core",
     ],
 )
