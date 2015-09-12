@@ -51,3 +51,4 @@ sftp-config.json
 ### Buck ###
 buck-out/
 .buckd/
+.buckconfig.local
