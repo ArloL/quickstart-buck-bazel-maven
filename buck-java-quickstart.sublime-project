@@ -1,0 +1,17 @@
+{
+    "folders":
+    [
+        {
+            "path": ".",
+            "folder_exclude_patterns" : [
+                "target",
+                ".buckd",
+                "buck-out",
+                "bazel-*"
+            ],
+            "file_exclude_patterns" :[
+                "bazel-*"
+            ]
+        }
+    ]
+}
