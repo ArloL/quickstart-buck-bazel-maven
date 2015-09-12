@@ -1,28 +1,25 @@
 java_binary(
     name = "app",
+    main_class = "com.example.App",
+    runtime_deps = [":main"],
+)
+
+java_library(
+    name = "main",
     srcs = glob(["src/main/java/**/*.java"]),
     resources = glob(["src/main/resources/**"]),
-    main_class = "com.example.App",
-    deps = [":dependencies"],
+    deps = ["@guava//jar"],
 )
 
 java_test(
-    name = "app-test",
-    srcs = glob(["src/test/java/**/*.java"]),
-    deps = [":test-dependencies"],
-    timeout = "short",
-    size = "small"
-)
-
-java_library(
-    name = "dependencies",
-    exports = ["@guava//jar"],
-)
-
-java_library(
-    name = "test-dependencies",
-    exports = [
+    name = "app_test",
+    srcs = glob(["src/test/java/**/*Test.java"]),
+    resources = glob(["src/test/resources/**"]),
+    deps = [
+        ":main",
         "@junit//jar",
-        "@hamcrest-core//jar"
+        "@hamcrest-core//jar",
     ],
+    timeout = "short",
+    size = "small",
 )
