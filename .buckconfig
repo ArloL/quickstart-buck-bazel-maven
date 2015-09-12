@@ -2,3 +2,6 @@
     src_roots = /src/main/java/
     source_level = 8
     target_level = 8
+
+[download]
+    maven_repo = http://repo.maven.apache.org/maven2/
