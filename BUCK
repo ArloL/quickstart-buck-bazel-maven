@@ -19,6 +19,5 @@ java_test(
     deps = [
         ":main",
         "//dep:junit",
-        "//dep:hamcrest-core",
     ],
 )

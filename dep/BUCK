@@ -15,6 +15,7 @@ prebuilt_jar(
     name = "junit",
     binary_jar = ":remote-junit",
     visibility = ["PUBLIC"],
+    deps = [":hamcrest-core"],
 )
 
 remote_file(
