@@ -6,9 +6,9 @@ prebuilt_jar(
 
 remote_file(
     name = "remote-guava",
-    out = "com.google.guava.guava-18.0.jar",
-    url = "mvn:com.google.guava:guava:jar:18.0",
-    sha1 = "cce0823396aa693798f8882e64213b1772032b09",
+    out = "com.google.guava.guava-31.0.1-jre.jar",
+    url = "mvn:com.google.guava:guava:jar:31.0.1-jre",
+    sha1 = "119ea2b2bc205b138974d351777b20f02b92704b",
 )
 
 prebuilt_jar(
@@ -20,9 +20,9 @@ prebuilt_jar(
 
 remote_file(
     name = "remote-junit",
-    out = "junit.junit-4.12.jar",
-    url = "mvn:junit:junit:jar:4.12",
-    sha1 = "2973d150c0dc1fefe998f834810d68f278ea58ec",
+    out = "junit.junit-4.13.2.jar",
+    url = "mvn:junit:junit:jar:4.13.2",
+    sha1 = "8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12",
 )
 
 prebuilt_jar(
