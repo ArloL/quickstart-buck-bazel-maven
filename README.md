@@ -1,12 +1,4 @@
-# ${PROJECT}
+# quickstart with Buck, Bazel and Maven
 
-Short description
-
-# Quickstart
-
-`./call-some-command --with-some-options`
-
-# Install
-
-`./install`
-
+An experiment comparing the three build and
+dependency management systems.
