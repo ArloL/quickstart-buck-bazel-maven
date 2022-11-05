@@ -46,17 +46,25 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3.1.0
+    - name: Make sure build did not change anything
+      run: git diff --exit-code
     - uses: actions/setup-java@v3.6.0
       with:
         java-version: ${{ env.JAVA_VERSION }}
         distribution: temurin
         cache: 'maven'
+    - name: Make sure build did not change anything
+      run: git diff --exit-code
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2.1.29
       with:
         languages: java
+    - name: Make sure build did not change anything
+      run: git diff --exit-code
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2.1.29
+    - name: Make sure build did not change anything
+      run: git diff --exit-code
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2.1.29
     - name: Make sure build did not change anything
