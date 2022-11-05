@@ -61,8 +61,6 @@ jobs:
         languages: java
     - name: Make sure build did not change anything
       run: git diff --exit-code
-    - run: |
-        ./mvnw --help
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2.1.29
     - name: Make sure build did not change anything
